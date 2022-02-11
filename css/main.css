@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+html {scroll-behavior: smooth;}
+body{font-family: 'Noto Sans KR', sans-serif; background: url(../img/bg.jpg);}
+li, ul, ol{list-style: none;}
+a{text-decoration: none;}
+.contentBox{width: 1200px; height: 100%; margin: 0 auto; background-color: burlywood;}
+
+#logoBox{width: 100%; height: 100px; margin-top: 400px; background-color: blue;}
+.logo{margin-left: 43%;}
+header{width: 100%; height: 50px; background-color: cadetblue;}

@@ -7,16 +7,19 @@ li, ul, ol{list-style: none;}
 a{text-decoration: none;}
 .contentBox{width: 1200px; height: 100%; margin: 0 auto; background-color: burlywood;}
 
-#topBox{width: 100%; height: 500px; margin-top: 300px;}
-.topBox_left{width: 70%; height: 100%; float: left;}
-header{width: 100%; height: 10%;}
+header{width: 100%; height: 50px; background-color: aliceblue;}
 .menutotal{width: 18%; height: 100%; float: left; display: flex; justify-content: space-around; align-items: center;}
 .menutotal img{margin-bottom: 3%; cursor: pointer;}
 .menutotal li{padding-bottom: 4%;}
 .menu{width: 82%; height: 100%; display: flex; justify-content: space-around; padding-top: 10px; float: right;}
 .menuList li{font-weight: bold;}
 .menu li:hover{cursor: pointer; color: tomato; font-weight: bold;}
-.slogan{width: 100%; height: 300px; margin-top: 100px; padding-left: 10%;}
+
+/*focus 커피*/
+#topBox{width: 100%; height: 500px; margin-top: 200px;}
+#topBox>.contentBox{background-color: gold;}
+.topBox_left{width: 70%; height: 100%; float: left;}
+.slogan{width: 100%; height: 300px; margin-top: 130px; padding-left: 10%;}
 .slogan h2{font-size: 35px;}
 .slogan h1{font-size: 50px;}
 .showNow{width: 30%; height: 45px; background-color: black; color: #fff; border: none; border-radius: 5px; margin-top: 30px; cursor: pointer; font-size: 16px;}
@@ -25,23 +28,81 @@ header{width: 100%; height: 10%;}
 .coffee{position: absolute; top: 10%; left: 65%; margin: -15% 0 0 10%;}
 .coffee_glass{position: absolute; top: -15px; right: 22%;}
 
-#middleBox{width: 100%; height: 500px;}
+/*슬라이드*/
+#middleBox{width: 100%; height: 500px; margin-top: 50px; overflow: hidden;}
+.middleSlide{width: 4000px; height: 500px;}
+.middleSlide li{float: left;}
 
-#lineBox{width: 100%; height: 300px;}
-.lineBox_left{width: 30%; height: 100%;float: left; padding: 6% 0 0 8%;}
+/*레브*/
+#collectionBox{width: 100%; height: 1030px; margin-top: 80px;}
+.collectionBox_top{width: 100%; height: 150px; margin-bottom: 50px;}
+.reveBox{width: 30%; height: 150px; text-align: center; margin-left: 35%;}
+.reveBox h1{font-size: 40px;}
+.reveBox span{font-size: 20px;}
+.reveBox p{margin-top: 5%;}
+.reveBox_bottom{width: 100%; height: 800px; display: flex; flex-flow: row wrap;}
+
+/*아워밀크*/
+#ourmilk_Box{width: 100%; height: 490px; overflow: hidden; margin-top: 50px;}
+/*아워밀크 왼쪽*/
+.milkbox_left{width: 30%; height: 100%; float: left; padding: 18% 6% 0 5%;}
+/*아워밀크 왼쪽 설명*/
+.milkText{margin-top: 100px;}
+/*아워밀크 오른쪽*/
+.milkbox_right{width: 70%; height: 100%; float: right;}
+
+/*아워티*/
+#lineBox{width: 100%; height: 300px; margin-top: 50px;}
+.lineBox_left{width: 30%; height: 100%;float: left; padding: 9% 0 0 5%;}
 .lineBox_left p{font-size: 15px; line-height: 28px;}
 .lineBox_right{width: 70%; height: 100%; float: right; padding-right: 6%;}
 .line{width: 20%; height: 4px; background-color: sienna; margin: 5% 0%;}
 .lineBox_right{display: flex; justify-content: space-around; align-items: center;}
 
-#collectionBox{width: 100%; height: 1105px; background-color: aquamarine; padding-top: 5%; margin-bottom: 5%;}
-.collectionBox_top{width: 100%; height: 150px; background-color: darkcyan; margin-bottom: 5%;}
-.reveBox{width: 30%; height: 150px; background-color: blueviolet; text-align: center; margin-left: 35%; margin-bottom: 5%;}
-.reveBox h1{font-size: 40px;}
-.reveBox span{font-size: 20px;}
-.reveBox p{margin-top: 5%;}
-.reveBox_bottom{width: 100%; height: 800px; background-color: blueviolet; display: flex; flex-flow: row wrap;}
+/*샤이니 에티오피아*/
+#decaffeinBox{width: 100%; height: 500px; margin-top: 80px; overflow: hidden;}
+/*샤이니 에티오피아 왼쪽*/
+.decaffeinBox_left{width: 60%; height: 100%; float: left;}
+/*샤이니 에티오피아 오른쪽*/
+.decaffeinBox_right{width: 40%; height: 100%; float: right; position: relative;}
+/*오른쪽 위*/
+.decaffeinBox_top{width: 100%; height: 50%;}
+.decaffeinA{position: absolute;}
+.decaffeinA_Text{position: absolute; margin: 18% 0 0 55%;}
+/*오른쪽 아래*/
+.decaffeinBox_down{width: 100%; height: 50%;}
+.decaffeinB{position: absolute; margin-left: 50%;}
+.decaffeinB_Text{position: absolute; margin: 18% 0 0 5%;}
 
-#ourmilk_Box{width: 100%; height: 500px; background-color: chocolate;}
-.milkbox_left{width: 20%; height: 100%; background-color: aquamarine; float: left;}
-.milkbox_right{width: 80%; height: 100%; background-color: blue; float: right;}
+
+/*헤이즐넛*/
+#nutBox{width: 100%; height: 500px; margin-top: 80px;}
+.nutBox_left{width: 40%; height: 100%; background-color: blueviolet; float: left;}
+.nutBox_right{width: 60%; height: 100%; background-color: coral; float: right;}
+
+
+/*쟈뎅 브랜드 모음*/
+#brandBox{width: 100%; height: 600px; margin-top: 80px;}
+.brandBox_top{width: 30%; height: 150px; text-align: center; margin-left: 35%; margin-bottom: 5%;}
+.brandBox_top h1{font-size: 40px;}
+.brandBox_top span{font-size: 20px;}
+.brandBox_top p{margin-top: 5%;}
+.brand{width: 100%; height: 350px; display: flex; flex-flow: row wrap; justify-content: space-around;} 
+.brand img{margin: 2%;}
+
+/*회사 정보*/
+#informBox{width: 100%; height: 180px; margin-top: 50px; border-top: 1px solid rgb(172, 172, 172);}
+#informBox>.contentBox{display: flex; flex-direction: row;}
+.box{margin: 2%;}
+.box1 h2{margin-bottom: 5%;}
+.box p{font-size: 13px; color: #666; margin-top: 1%;}
+.box2{border-left: 1px solid rgb(172, 172, 172); border-right: 1px solid rgb(172, 172, 172); padding: 0% 3%;}
+.noticeList li{font-size: 13px; color: #666; margin-top: 2%;}
+
+/*풋터*/
+footer{width: 100%; height: 150px; margin-top: 30px; border-top: 1px solid rgb(172, 172, 172);}
+.footer_left{width: 20%; height: 100%; float: left;}
+.footer_left img{margin: 10% 20% 0% 20%;}
+.footer_right{width: 80%; height: 100%; float: right; font-size: 13px; padding: 2%;}
+.footer_right span{color: #666;}
+.footer_right p{margin-top: 1%;}

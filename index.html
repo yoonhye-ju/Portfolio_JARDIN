@@ -11,28 +11,32 @@
   <link rel="stylesheet" href="css/font.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="JS/slide.js"></script>
 
 </head>
 <body>
+
+  <header>
+    <div class="contentBox">
+      <ul class="menutotal menuList">
+        <img src="img/icon_menu.png" alt="icon_menu" width="30">
+        <li>전체 메뉴</li>
+      </ul>
+      <nav>
+        <ul class="menu menuList">
+          <li>신제품</li>
+          <li>캡슐커피</li>
+          <li>베스트</li>
+          <li>선물세트</li>
+          <li>이벤트</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <div id="topBox">
     <div class="contentBox">
       <div class="topBox_left">
-        <header>
-          <ul class="menutotal menuList">
-            <img src="img/icon_menu.png" alt="icon_menu" width="30">
-            <li>전체 메뉴</li>
-          </ul>
-          <nav>
-          <ul class="menu menuList">
-            <li>신제품</li>
-            <li>캡슐커피</li>
-            <li>베스트</li>
-            <li>선물세트</li>
-            <li>이벤트</li>
-          </ul>
-        </nav>
-        </header>
-
         <div class="slogan">
           <span>4가지 성분을 더한 <b>부드러운 아메리카노</b></span>
             <h2>집중이 필요할 땐 포커스!</h2>
@@ -48,26 +52,11 @@
   </div>
 
   <div id="middleBox">
-    <div class="contentBox">
-
-    </div>
-  </div>
-
-  <div id="lineBox">
-    <div class="contentBox">
-      <div class="lineBox_left">
-        <h1>our tea</h1>
-        <div class="line"></div>
-        <p>
-          과일의 싱그러움과 찻잎의 진항 풍미를<br>
-          한잔에 담은 티 브랜드
-        </p>
-      </div>
-      <div class="lineBox_right">
-        <img src="img/ourteaA.JPG" alt="ourteaA" width="200">
-        <img src="img/ourteaB.JPG" alt="ourteaB" width="200">
-        <img src="img/ourteaC.JPG" alt="ourteaC" width="200">
-      </div>
+    <div class="middleSlide">
+      <ul class="slide">
+        <li><img src="img/slide_valentine.png" alt="valentine"></li>
+        <li><img src="img/slide_classic.jpg" alt="classic">
+      </ul>
     </div>
   </div>
 
@@ -94,18 +83,140 @@
   <div id="ourmilk_Box">
     <div class="contentBox">
       <div class="milkbox_left">
-        <h1>our tea <sup>milk</sup></h1>
-        <div class="line"></div>
-        <p>
-          우유의 풍미와 찻잎의 깊은 향을 담은<br>
-          밀크티
-        </p>
+        <div class="milkText">
+          <h1>our tea milk</h1>
+          <div class="line"></div>
+          <p>
+            우유의 풍미와 찻잎의 깊은 향을 담은 밀크티
+          </p>
+        </div>
       </div>
       <div class="milkbox_right">
-
+        <img src="img/ourtmilk.JPG" alt="ourtmilk" width="840">
       </div>
     </div>
   </div>
+
+  <div id="lineBox">
+    <div class="contentBox">
+      <div class="lineBox_left">
+        <h1>our tea</h1>
+        <div class="line"></div>
+        <p>
+          과일의 싱그러움과 찻잎의 진항 풍미를<br>
+          한잔에 담은 티 브랜드
+        </p>
+      </div>
+      <div class="lineBox_right">
+        <img src="img/ourteaA.JPG" alt="ourteaA" width="200">
+        <img src="img/ourteaB.JPG" alt="ourteaB" width="200">
+        <img src="img/ourteaC.JPG" alt="ourteaC" width="200">
+      </div>
+    </div>
+  </div>
+
+  <div id="decaffeinBox">
+    <div class="contentBox">
+      <div class="decaffeinBox_left">
+        <img src="img/decaffein.jpg" alt="decaffein" width="720">
+      </div>
+      <div class="decaffeinBox_right">
+        <div class="decaffeinBox_top">
+          <img src="img/decaffeinA.JPG" class="decaffeinA" width="240">
+          <div class="decaffeinA_Text">
+            <h3>클래스 핸드드립 커피</h3>
+            <div class="line"></div>
+            <p>
+              샤이니 에티오피아 10P
+            </p>
+          </div>
+        </div>
+        <div class="decaffeinBox_down">
+          <img src="img/decaffeinB.JPG" class="decaffeinB" width="240">
+          <div class="decaffeinB_Text">
+            <h3>고급스런 패키지 디자인</h3>
+            <div class="line"></div>
+            <p>
+              소중한 당신을 위한 <br>
+              센스있는 선물
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="nutBox">
+    <div class="contentBox">
+      <div class="nutBox_left">
+        <img src="img/hazelnut.jpg" alt="hazelnut">
+      </div>
+      <div class="nutBox_right">
+        
+      </div>
+    </div>
+    </div>
+
+<div id="brandBox">
+  <div class="contentBox">
+    <div class="brandBox_top">
+      <div class="brandBox_text">
+        <h1>JARDIN Brand</h1>
+        <span>쟈뎅 브랜드</span>
+        <p>세계 커피 산지 고유의 맛과 향을 고스란히 느낄 수 있는 원두 커피 브랜드</p>
+      </div>
+    </div>
+    <div class="brand">
+      <img src="img/brand01.JPG" alt="brand01" width="250" height="135">
+      <img src="img/brand02.JPG" alt="brand02" width="250" height="135">
+      <img src="img/brand03.JPG" alt="brand03" width="250" height="135">
+      <img src="img/brand04.JPG" alt="brand04" width="250" height="135">
+      <img src="img/brand05.JPG" alt="brand05" width="250" height="135">
+      <img src="img/brand06.JPG" alt="brand06" width="250" height="135">
+      <img src="img/brand07.JPG" alt="brand07" width="250" height="135">
+    </div>
+  </div>
+</div>
+
+<div id="informBox">
+  <div class="contentBox">
+    <div class="box1 box">
+      <h3>CS CENTER</h3>
+      <h2>02-546-3881</h2>
+      <p>평일 10:00-16:00, 점심 11:30-12:30</p>
+      <p>주말, 공휴일 휴무</p>
+    </div>
+    <div class="box2 box">
+      <h3>ABOUT COMPANY</h3>
+      <h2>홈페이지 바로가기</h2>
+    </div>
+    <div class="box3 box">
+      <h3>NOTICE</h3>
+      <ul class="noticeList">
+        <li>[배송안내] 2021년 추석 배송 마감 안내</li>
+        <li>쟈뎅샵 출석 체크 이벤트 잠정 중단 안내</li>
+        <li>[공지] 아워티 묶음구성 배송비 정책 변경 안내</li>
+        <li>[배송안내] 21년 설 연휴 기간 배송 예정일</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="contentBox">
+    <div class="footer_left">
+      <img src="img/logo.png" alt="logo" width="130">
+    </div>
+    <div class="footer_right">
+      <span>법인명(상호)</span> (주)쟈뎅 &nbsp;<span>대표자(성명)</span> 윤상용 &nbsp;<span>사업자 등록번호 안내</span> 211-81-24727<br>
+      <span>통신판매업 신고</span> 제 강남 – 1160호 [사업자정보확인] <span>전화</span> 02-546-3881 &nbsp;<span>팩스</span> 02-542-4680 <br>
+      <span>주소</span> 06039 서울특별시 강남구 논현동 4-21 영 빌딩 &nbsp;<span>개인정보보호책임자</span> 윤상용 (jardin@jardin.co.kr)
+    
+      <p>COPYRIGHT © (주)쟈뎅. ALL RIGHT RESERVED.</p>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>

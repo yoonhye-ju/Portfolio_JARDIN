@@ -13,27 +13,44 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="JS/slide.js"></script>
   <script src="JS/mouseover.js"></script>
+  <script src="JS/header.js"></script>
 
 </head>
 <body>
 
   <header>
     <div class="contentBox">
-      <ul class="menutotal menuList">
-        <img src="img/icon_menu.png" alt="icon_menu" width="30">
-        <li>전체 메뉴</li>
-      </ul>
       <nav>
-        <ul class="menu menuList">
-          <li>신제품</li>
-          <li>캡슐커피</li>
-          <li>베스트</li>
-          <li>선물세트</li>
-          <li>이벤트</li>
+        <ul class="menu">
+          <img src="img/icon_menu.png" alt="icon_menu" width="30">
+          <li><a href="#">전체 메뉴</a></li>
+          <li><a href="#">신제품</a></li>
+          <li><a href="#">캡슐커피</a></li>
+          <li><a href="#">베스트</a></li>
+          <li><a href="#">선물세트</a></li>
+          <li><a href="#">이벤트</a></li>
+        </ul>
+
+        <ul class="login">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">주문조회</a></li>
+          <li><a href="#">고객센터</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
+  <div id="search">
+    <div class="contentBox">
+      <div class="logoBox">
+        <img src="img/logo.png" alt="logo" width="100">
+      </div>
+      <div class="searchBox">
+        <div class="searchLine"></div>
+      </div>
+    </div>
+  </div>
 
   <div id="topBox">
     <div class="contentBox">
@@ -71,12 +88,61 @@
         </div>
       </div>
       <div class="reveBox_bottom">
-        <img src="img/revA.JPG" alt="revA" width="400" height="400">
-        <img src="img/revB.JPG" alt="revB" width="400" height="400">
-        <img src="img/revC.JPG" alt="revC" width="400" height="400">
-        <img src="img/revD.JPG" alt="revD" width="400" height="400">
-        <img src="img/revF.JPG" alt="revF" width="400" height="400">
-        <img src="img/revG.JPG" alt="revG" width="400" height="400">
+  
+        <div class="revA Reve">
+          <img src="img/revA.JPG" alt="revA" width="400" height="400">
+          <div class="revA_black reveCoffee">
+            <h4>[레브] 캡슐커피 웜 브리즈 10P</h4>
+            <p>6,3000원</p>
+            <button>자세히 보기</button>
+          </div>
+        </div>
+  
+        <div class="revB Reve">
+          <img src="img/revB.JPG" alt="revB" width="400" height="400">
+          <div class="revB_black reveCoffee">
+            <h4>[레브] 캡슐커피 웰 드레스드 10P</h4>
+            <p>6,3000원</p>
+            <button>자세히 보기</button>
+          </div>
+        </div>
+  
+        <div class="revC Reve">
+          <img src="img/revC.JPG" alt="revC" width="400" height="400">
+          <div class="revC_black reveCoffee">
+            <h4>[레브] 캡슐커피<br>싱글 오리진 콜롬비아 10P</h4>
+            <p>6,3000원</p>
+            <button>자세히 보기</button>
+          </div>
+        </div>
+  
+        <div class="revD Reve">
+          <img src="img/revD.JPG" alt="revD" width="400" height="400">
+          <div class="revD_black reveCoffee">
+            <h4>[레브] 캡슐커피 디카페인 10P</h4>
+            <p>6,3000원</p>
+            <button>자세히 보기</button>
+          </div>
+        </div>
+  
+        <div class="revF Reve">
+          <img src="img/revF.JPG" alt="revF" width="400" height="400">
+          <div class="revF_black reveCoffee">
+            <h4>[레브] 캡슐커피 모닝 선샤인 10P</h4>
+            <p>6,3000원</p>
+            <button>자세히 보기</button>
+          </div>
+        </div>
+  
+        <div class="revG Reve">
+          <img src="img/revG.JPG" alt="revG" width="400" height="400">
+          <div class="revG_black reveCoffee">
+            <h4>[레브] 캡슐커피<br>스모키 미드나잇 10P</h4>
+            <p>6,3000원</p>
+            <button>자세히 보기</button>
+          </div>
+        </div>
+  
       </div>
     </div>
   </div>

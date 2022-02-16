@@ -2,21 +2,21 @@ $(window).scroll(function () {
   let wb = $(this).scrollTop();
 
   /*focus 커피 배경*/
-  if (wb > 300) {
+  if (wb > 400) {
     $('.focusBox').css("transform", "translateY(0px)").css("opacity", "1");
   } else {
     $('.focusBox').css("transform", "translateY(0px)").css("opacity", "0");
   }
   /*focus 커피 슬로건*/
-  if (wb > 400) {
+  if (wb > 500) {
     $('.slogan').css("transform", "translateY(0px)").css("opacity", "1");
     /*focus 커피*/
     $('.coffee').css("transform", "translateY(0px)").css("opacity", "1");
     $('.coffee_glass').css("transform", "translateY(0px)").css("opacity", "1");
   } else {
-    $('.slogan').css("transform", "translateY(0px)").css("opacity", "0");
-    $('.coffee').css("transform", "translateX(0px)").css("opacity", "0");
-    $('.coffee_glass').css("transform", "translateX(0px)").css("opacity", "0");
+    $('.slogan').css("transform", "translateY(100px)").css("opacity", "0");
+    $('.coffee').css("transform", "translateY(200px)").css("opacity", "0");
+    $('.coffee_glass').css("transform", "translateY(200px)").css("opacity", "0");
   }
   /*아워 밀크*/
   if (wb > 1900) {

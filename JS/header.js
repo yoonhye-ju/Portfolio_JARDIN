@@ -11,10 +11,10 @@ function scrollController() {
   if (currentScrollTop > 50) {
     $("header").addClass("fixed");
     $("header a").addClass("txtCh");
-    $(".menu img").attr("src", "img/icon_menu_white.png");
+    $(".menu li i").css("color", "white");
   } else {
     $("header").removeClass("fixed");
     $("header a").removeClass("txtCh");
-    $(".menu img").attr("src", "img/icon_menu.png");
+    $(".menu li i").css("color", "black");
   }
 }

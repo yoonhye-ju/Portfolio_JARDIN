@@ -1,61 +1,58 @@
 $(function () {
   /*디카페인 샤이니 에티오피아*/
-  $('.decaffeinBox_left').mouseover(function () {
-    $('.decaffeinBox_black').show();
-    $('.decaffein').show();
-    $('.arrow').show();
+  $('.decaffeinBox_left').mouseenter(function () {
+    $('.decaffeinBox_black').fadeIn(500);
   });
-  $('.decaffeinBox_left').mouseout(function () {
-    $('.decaffeinBox_black').hide();
-    $('.decaffein').hide();
-    $('.arrow').hide();
+  $('.decaffeinBox_left').mouseleave(function () {
+    $('.decaffeinBox_black').fadeOut(500);
   });
 
+  /*Reve 커피 종류*/
   /*레브A*/
-  $('.revA').mouseover(function () {
-    $('.revA_black').show();
+  $('.revA').mouseenter(function () {
+    $('.revA_white').fadeIn(500);
   });
-  $('.revA').mouseout(function () {
-    $('.revA_black').hide();
+  $('.revA').mouseleave(function () {
+    $('.revA_white').fadeOut(500);
   });
 
   /*레브B*/
-  $('.revB').mouseover(function () {
-    $('.revB_black').show();
+  $('.revB').mouseenter(function () {
+    $('.revB_white').fadeIn(500);
   });
-  $('.revB').mouseout(function () {
-    $('.revB_black').hide();
+  $('.revB').mouseleave(function () {
+    $('.revB_white').fadeOut(500);
   });
 
   /*레브C*/
-  $('.revC').mouseover(function () {
-    $('.revC_black').show();
+  $('.revC').mouseenter(function () {
+    $('.revC_white').fadeIn(500);
   });
-  $('.revC').mouseout(function () {
-    $('.revC_black').hide();
+  $('.revC').mouseleave(function () {
+    $('.revC_white').fadeOut(500);
   });
 
   /*레브D*/
-  $('.revD').mouseover(function () {
-    $('.revD_black').show();
+  $('.revD').mouseenter(function () {
+    $('.revD_white').fadeIn(500);
   });
-  $('.revD').mouseout(function () {
-    $('.revD_black').hide();
+  $('.revD').mouseleave(function () {
+    $('.revD_white').fadeOut(500);
   });
 
   /*레브F*/
-  $('.revF').mouseover(function () {
-    $('.revF_black').show();
+  $('.revF').mouseenter(function () {
+    $('.revF_white').fadeIn(500);
   });
-  $('.revF').mouseout(function () {
-    $('.revF_black').hide();
+  $('.revF').mouseleave(function () {
+    $('.revF_white').fadeOut(500);
   });
 
   /*레브G*/
-  $('.revG').mouseover(function () {
-    $('.revG_black').show();
+  $('.revG').mouseenter(function () {
+    $('.revG_white').fadeIn(500);
   });
-  $('.revF').mouseout(function () {
-    $('.revG_black').hide();
+  $('.revG').mouseleave(function () {
+    $('.revG_white').fadeOut(500);
   });
 });

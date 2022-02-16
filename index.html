@@ -7,6 +7,7 @@
   <title>쟈뎅 | JARDIN </title>
 
   <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/font.css">
 
@@ -23,8 +24,7 @@
     <div class="contentBox">
       <nav>
         <ul class="menu">
-          <img src="img/icon_menu.png" alt="icon_menu" width="30">
-          <li><a href="#">전체 메뉴</a></li>
+          <li><i class="fa-solid fa-bars"></i><a href="#">전체 메뉴</a></li>
           <li><a href="#">신제품</a></li>
           <li><a href="#">캡슐커피</a></li>
           <li><a href="#">베스트</a></li>
@@ -42,6 +42,7 @@
     </div>
   </header>
 
+  
   <div id="search">
     <div class="contentBox">
       <div class="logoBox">
@@ -49,26 +50,9 @@
       </div>
       <div class="searchBox">
         <div class="searchIconBox">
-          <img src="img/icon_search.png" class="searchBar"  width="40">
+          <img src="img/icon_search.png" class="searchBar" width="40" alt="searchBar">
         <input type="text" id="searchLine">
       </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="topBox">
-    <div class="contentBox">
-      <div class="topBox_left">
-        <div class="slogan">
-          <span>4가지 성분을 더한 <b>부드러운 아메리카노</b></span>
-            <h2>집중이 필요할 땐 포커스!</h2>
-            <h1>UPTO 60% OFF</h1>
-          <button class="showNow">자세히보기</button>
-        </div>
-      </div>
-      <div class="topBox_right">
-        <img src="img/coffee_glass.png" class="coffee_glass" width="190">
-        <img src="img/coffee.png" class="coffee" width="250">
       </div>
     </div>
   </div>
@@ -79,6 +63,35 @@
         <li><img src="img/slide_valentine.png" alt="valentine"></li>
         <li><img src="img/slide_classic.jpg" alt="classic">
       </ul>
+      <div class="slideBox">
+        <div class="contentBox">
+          <span class="prev">&lt;</span>
+          <span class="next">&gt;</span>
+  
+          <div class="dotBox">
+            <span class="dot active" onclick="prev()"></span>
+            <span class="dot" onclick="next()"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="topBox">
+    <div class="contentBox">
+      <div class="focusBox"></div>
+      <div class="topBox_left">
+        <div class="slogan">
+          <span>4가지 성분을 더한 <b>부드러운 아메리카노</b></span>
+            <h2>집중이 필요할 땐 포커스!</h2>
+            <h1>UPTO 60% OFF</h1>
+          <button class="showNow">자세히보기</button>
+        </div>
+      </div>
+      <div class="topBox_right">
+        <img src="img/coffee_glass.png" class="coffee_glass" width="190" alt="coffee_glass">
+        <img src="img/coffee.png" class="coffee" width="250" alt="coffee">
+      </div>
     </div>
   </div>
 
@@ -95,7 +108,7 @@
   
         <div class="revA Reve">
           <img src="img/revA.JPG" alt="revA" width="400" height="400">
-          <div class="revA_black reveCoffee">
+          <div class="revA_white reveCoffee">
             <h4>[레브] 캡슐커피 웜 브리즈 10P</h4>
             <p>6,3000원</p>
             <button>자세히 보기</button>
@@ -104,7 +117,7 @@
   
         <div class="revB Reve">
           <img src="img/revB.JPG" alt="revB" width="400" height="400">
-          <div class="revB_black reveCoffee">
+          <div class="revB_white reveCoffee">
             <h4>[레브] 캡슐커피 웰 드레스드 10P</h4>
             <p>6,3000원</p>
             <button>자세히 보기</button>
@@ -113,7 +126,7 @@
   
         <div class="revC Reve">
           <img src="img/revC.JPG" alt="revC" width="400" height="400">
-          <div class="revC_black reveCoffee">
+          <div class="revC_white reveCoffee">
             <h4>[레브] 캡슐커피<br>싱글 오리진 콜롬비아 10P</h4>
             <p>6,3000원</p>
             <button>자세히 보기</button>
@@ -122,7 +135,7 @@
   
         <div class="revD Reve">
           <img src="img/revD.JPG" alt="revD" width="400" height="400">
-          <div class="revD_black reveCoffee">
+          <div class="revD_white reveCoffee">
             <h4>[레브] 캡슐커피 디카페인 10P</h4>
             <p>6,3000원</p>
             <button>자세히 보기</button>
@@ -131,7 +144,7 @@
   
         <div class="revF Reve">
           <img src="img/revF.JPG" alt="revF" width="400" height="400">
-          <div class="revF_black reveCoffee">
+          <div class="revF_white reveCoffee">
             <h4>[레브] 캡슐커피 모닝 선샤인 10P</h4>
             <p>6,3000원</p>
             <button>자세히 보기</button>
@@ -140,7 +153,7 @@
   
         <div class="revG Reve">
           <img src="img/revG.JPG" alt="revG" width="400" height="400">
-          <div class="revG_black reveCoffee">
+          <div class="revG_white reveCoffee">
             <h4>[레브] 캡슐커피<br>스모키 미드나잇 10P</h4>
             <p>6,3000원</p>
             <button>자세히 보기</button>
@@ -191,12 +204,12 @@
       <div class="decaffeinBox_left">
         <img src="img/decaffein.jpg" alt="decaffein" width="720">
         <div class="decaffeinBox_black">
-          <span class="decaffein">쟈뎅 핸드 드립 커피 더 보기</span><img src="img/icon_arrow.png" class="arrow">
+          <span class="decaffein">쟈뎅 핸드 드립 커피 더 보기</span><img src="img/icon_arrow.png" class="arrow" alt="arrow">
         </div>
       </div>
       <div class="decaffeinBox_right">
         <div class="decaffeinBox_top">
-          <img src="img/decaffeinA.JPG" class="decaffeinA" width="240">
+          <img src="img/decaffeinA.JPG" class="decaffeinA" width="240" alt="decaffeinA">
           <div class="decaffeinA_Text">
             <h3>클래스 핸드드립 커피</h3>
             <div class="line"></div>
@@ -206,7 +219,7 @@
           </div>
         </div>
         <div class="decaffeinBox_down">
-          <img src="img/decaffeinB.JPG" class="decaffeinB" width="240">
+          <img src="img/decaffeinB.JPG" class="decaffeinB" width="240" alt="decaffeinB">
           <div class="decaffeinB_Text">
             <h3>고급스런 패키지 디자인</h3>
             <div class="line"></div>
@@ -227,6 +240,7 @@
         <img src="img/hazelnut.jpg" alt="hazelnut">
         <span>우리가 좋아하는<br>헤이즐넛!</span>
         <p>더보기+</p>
+        <div class="blackBox"></div>
       </div>
       <div class="nutBox_right">
         <div class="hazelnutBox">

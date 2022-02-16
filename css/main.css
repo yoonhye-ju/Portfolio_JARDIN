@@ -7,21 +7,25 @@ li, ul, ol{list-style: none;}
 a{text-decoration: none; color: black;}
 .contentBox{width: 1200px; height: 100%; margin: 0 auto;}
 
-header{width: 100%; height: 50px; transition: 0.5s ease-in-out; z-index: 10;}
+header{width: 100vw; height: 50px; transition: 0.5s ease-in-out; z-index: 10;}
+header>.contentBox{padding-left: 3%;}
 header.fixed{background: #eb6100; position: fixed; top: 0px; width: 100%;}
 
-.menu{width: 80%; height: 100%; display: flex; float: left;}
-.menu>img{margin: 0.7% 3% 0 0;}
+.menu{width: 75%; height: 100%; display: flex; float: left;}
 .menu li{width: 100%; height: 100%; padding-top: 10px; cursor: pointer;}
-.menu li a{font-weight: bold; float: left;}
+.menu li i{font-size: 20px; padding-right: 15%;}
+.menu li a{font-weight: bold;}
+.menu li a:hover{text-decoration: underline;}
 .menu li a.txtCh{color: #fff;}
+.menu li a.txtCh:hover{text-decoration: underline;}
 
-.login{width: 20%; height: 100%; display: flex; float: right; justify-content: space-around; padding-top: 15px;}
-.login li{font-size: 13px; padding-right: 1%;}
+.login{width: 25%; height: 100%; display: flex; float: right; justify-content: space-around; padding-top: 15px; padding-right: 2%;}
+.login li{font-size: 13px; padding-right: 3%;}
 .login li a.txtCh{color: #fff;}
 
 /*로고 검색 박스*/
 #search{width: 100%; height: 100px; margin-top: 80px;}
+#search>.contentBox{padding-left: 3%;}
 .logoBox{width: 10%; height: 100%; float: left;}
 .searchBox{width: 90%; height: 100%; float: right; display: flex; align-items: center; padding-left: 5%;}
 /*검색박스*/
@@ -32,31 +36,39 @@ header.fixed{background: #eb6100; position: fixed; top: 0px; width: 100%;}
 #searchLine{width: 100%; height: 50px; border: none; border-bottom: 3px solid sienna; font-size: 20px; background-color: transparent; position: absolute;}
 input:focus{outline: none;}
 
+/*슬라이드*/
+#middleBox{width: 100%; height: 500px; margin-top: 50px; overflow: hidden;}
+.middleSlide{width: 200vw; height: 500px;}
+.middleSlide li{width: 100vw; height: 500px; float: left; position: relative;}
+.slideBox{width: 100%; height: 500px; position: absolute;}
+.slideBox>.contentBox{display: flex; justify-content: space-between; align-items: center; padding: 0% 2%;}
+.prev, .next{font-size: 100px; color: #666; cursor: pointer;}
+
+/*슬라이드 도트박스*/
+.dotBox{text-align: center; position: absolute; top: 90%; left: 50%;}
+.dot {cursor: pointer; width: 13px; height: 13px; margin: 0 5px; background-color: white; border-radius: 50%; display: inline-block; transition: 0.3s linear; border: 2px solid white;}
+.active, .dot:hover {background-color: #666;}
+
 /*focus 커피*/
-#topBox{width: 100%; height: 500px; margin-top: 100px;}
-#topBox>.contentBox{background-color: gold;}
+#topBox{width: 100%; height: 700px;}
+#topBox>.contentBox{position: relative;}
 /*focus 커피 왼쪽*/
 .topBox_left{width: 70%; height: 100%; float: left;}
-.slogan{width: 100%; height: 300px; margin-top: 130px; padding-left: 10%; transition: all 0.5s linear; transform: translateY(200px); opacity: 0;}
+.slogan{width: 100%; height: 300px; margin-top: 350px; padding-left: 10%; transition: all 0.5s linear; transform: translateY(500px); opacity: 0;}
 .slogan h2{font-size: 35px;}
 .slogan h1{font-size: 50px;}
 .showNow{width: 30%; height: 45px; background-color: black; color: #fff; border: none; border-radius: 5px; margin-top: 30px; cursor: pointer; font-size: 16px;}
 .showNow:hover{border: 2px solid black; color: black; background-color: transparent;}
 /*focus 커피 오른쪽*/
-.topBox_right{position: relative;}
+.topBox_right{width: 30%; height: 100%; float: right; position: relative;}
 /*focus 커피 페트*/
-.coffee{position: absolute; top: 10%; left: 65%; margin: -15% 0 0 10%; transition: all 0.8s linear; transform: translateX(100px); opacity: 0;}
+.coffee{position: absolute; top: 10%; left: 10%; margin: -15% 0 0 10%; transition: all 0.8s linear; transform: translateY(500px); opacity: 0;}
 /*focus 커피 유리컵*/
-.coffee_glass{position: absolute; top: -15px; right: 22%; transition: 0.8s linear; transform: translateX(100px); opacity: 0;}
-
-
-/*슬라이드*/
-#middleBox{width: 100%; height: 500px; margin-top: 50px; overflow: hidden;}
-.middleSlide{width: 4000px; height: 500px;}
-.middleSlide li{float: left;}
+.coffee_glass{position: absolute; top: 20%; right: 70%; transition: all 0.8s linear; transform: translateY(500px); opacity: 0;}
+.focusBox{width: 100%; height: 500px; background-color: gold; position: absolute; bottom: 0; transition: all 0.5s linear; transform: translateY(300px); opacity: 0;}
 
 /*레브*/
-#collectionBox{width: 100%; height: 1030px; margin-top: 80px;}
+#collectionBox{width: 100%; height: 1030px; margin-top: 80px; overflow: hidden;}
 .collectionBox_top{width: 100%; height: 150px; margin-bottom: 50px;}
 .reveBox{width: 30%; height: 150px; text-align: center; margin-left: 35%;}
 .reveBox h1{font-size: 40px; font-family: 'Courgette', cursive;}
@@ -65,23 +77,26 @@ input:focus{outline: none;}
 .reveBox_bottom{width: 100%; height: 800px; display: flex; flex-flow: row wrap; align-content: center;}
 
 /*Reve*/
-.Reve{width: 33.3%; height: 50%; position: relative; animation: reve all 0.5s linear;}
-
-/*Reve 애니메이션*/
-@keyframes reve{to{opacity: 0;}
-from{opacity: 1;}}
+.Reve{width: 33.31%; height: 50%; position: relative;}
 
 /*Reve hover*/
-.reveCoffee h4{position: absolute; top: 40%; left: 20%; font-size: 20px; color: black; animation: reve all 0.5s linear;}
+.reveCoffee h4{position: absolute; top: 40%; left: 20%; font-size: 20px; color: black;}
 .reveCoffee p{position: absolute; top: 48%; left: 41%; font-weight: bold; font-size: 18px; color: tomato;}
-.reveCoffee{width: 100%; height: 100%; position: absolute; top:0; left:0; background-color: #fff; text-align: center; display: none;}
 .reveCoffee button{position: absolute; width: 30%; height: 10%; top: 65%; left: 35%; border: none; border-radius: 30px; color: #fff; background-color: tomato; cursor: pointer;}
+/*Reve fadeIn*/
+.revA_white{width: 100%; height: 100%; position: absolute; top:0; left:0; background-color: #fff; text-align: center; display: none;}
+.revB_white{width: 100%; height: 100%; position: absolute; top:0; left:0; background-color: #fff; text-align: center; display: none;}
+.revC_white{width: 100%; height: 100%; position: absolute; top:0; left:0; background-color: #fff; text-align: center; display: none;}
+.revD_white{width: 100%; height: 100%; position: absolute; top:0; left:0; background-color: #fff; text-align: center; display: none;}
+.revF_white{width: 100%; height: 100%; position: absolute; top:0; left:0; background-color: #fff; text-align: center; display: none;}
+.revG_white{width: 100%; height: 100%; position: absolute; top:0; left:0; background-color: #fff; text-align: center; display: none;}
+
 
 /*Reve hover h4 배치*/
-.revB_black h4{position: absolute; top: 40%; left: 17%; font-size: 20px; color: black;}
-.revF_black h4{position: absolute; top: 40%; left: 17%; font-size: 20px; color: black;}
-.revC_black h4{position: absolute; top: 32%; left: 21%; font-size: 20px; color: black;}
-.revG_black h4{position: absolute; top: 32%; left: 27%; font-size: 20px; color: black;}
+.revB_white h4{position: absolute; top: 40%; left: 17%; font-size: 20px; color: black;}
+.revF_white h4{position: absolute; top: 40%; left: 17%; font-size: 20px; color: black;}
+.revC_white h4{position: absolute; top: 32%; left: 21%; font-size: 20px; color: black;}
+.revG_white h4{position: absolute; top: 32%; left: 27%; font-size: 20px; color: black;}
 
 /*아워밀크*/
 #ourmilk_Box{width: 100%; height: 490px; overflow: hidden; margin-top: 50px; transition: all 0.5s linear; transform: translateY(200px); opacity: 0;}
@@ -94,7 +109,7 @@ from{opacity: 1;}}
 .milkbox_right{width: 70%; height: 100%; float: right;}
 
 /*아워티*/
-#lineBox{width: 100%; height: 300px; margin-top: 50px; transition: all 0.5s linear; transform: translateY(200px); opacity: 0;}
+#lineBox{width: 100%; height: 300px; margin-top: 50px; transition: all 0.5s linear; transform: translateY(200px); opacity: 0; overflow: hidden;}
 #lineBox>.contentBox{background-color: #fff;}
 .lineBox_left{width: 30%; height: 100%;float: left; padding: 9% 0 0 5%;}
 .lineBox_left p{font-size: 15px; line-height: 28px;}
@@ -103,14 +118,15 @@ from{opacity: 1;}}
 .lineBox_right{display: flex; justify-content: space-around; align-items: center;}
 
 /*샤이니 에티오피아*/
-#decaffeinBox{width: 100%; height: 500px; margin-top: 80px; overflow: hidden;}
+#decaffeinBox{width: 100%; height: 500px; margin-top: 80px; overflow: hidden; transition: all 0.5s linear; transform: translateY(200px); opacity: 0;}
 #decaffeinBox>.contentBox{background-color: #fff;}
 /*샤이니 에티오피아 왼쪽*/
-.decaffeinBox_left{width: 60%; height: 100%; float: left; position: relative; cursor: pointer;}
+.decaffeinBox_left{width: 60%; height: 100%; float: left; position: relative; cursor: pointer; }
 /*샤이니 에티오피아 왼쪽 hover*/
-.decaffeinBox_black{width: 100%; height: 100%; position: absolute; top:0; left:0; background-color: black; opacity: 0.6; display: none;}
+.decaffeinBox_black{width: 100%; height: 100%; position: absolute; top:0; left:0; background-color: black; opacity: 0.6; display: none; animation: ethiopia all 0.5s linear;}
 .decaffein{position: absolute; top: 45%; left: 23%; font-size: 30px; color: #fff;}
 .arrow{position: absolute; top: 45%; right: 21%;}
+
 
 /*샤이니 에티오피아 오른쪽*/
 .decaffeinBox_right{width: 40%; height: 100%; float: right; position: relative;}
@@ -125,11 +141,13 @@ from{opacity: 1;}}
 
 
 /*헤이즐넛*/
-#nutBox{width: 100%; height: 500px; margin-top: 80px;}
+#nutBox{width: 100%; height: 500px; margin-top: 80px; overflow: hidden;}
 /*헤이즐넛 왼쪽*/
 .nutBox_left{width: 40%; height: 100%; background-color: blueviolet; float: left; position: relative;}
-.nutBox_left span{position: absolute; top: 320px; left: 25px; color: #fff; font-size: 35px; font-family: 'IM_Hyemin-Bold'; line-height: 47px;}
-.nutBox_left p{position: absolute; top: 430px; left: 25px; color: #fff; font-family: 'IM_Hyemin-Bold'; font-size: 13px; width: 80px; height: 30px; border: 2px solid #fff; border-radius: 3px; text-align: center; padding-top: 6px; cursor: pointer;}
+.nutBox_left span{position: absolute; top: 320px; left: 25px; color: #fff; font-size: 35px; font-family: 'IM_Hyemin-Bold'; line-height: 47px; z-index: 3;}
+.nutBox_left p{position: absolute; top: 430px; left: 25px; color: #fff; font-family: 'IM_Hyemin-Bold'; font-size: 13px; width: 80px; height: 30px; border: 2px solid #fff; border-radius: 3px; text-align: center; padding-top: 6px; cursor: pointer; z-index: 3;}
+.blackBox{position:absolute; width: 104%; height: 200px; opacity: 0.5; background-color: black; top: 300px;}
+/*헤이즐넛 오른쪽*/
 .nutBox_right{width: 60%; height: 100%; background-color: coral; float: right;}
 .hazelnutBox{width: 100%; height: 33.3%; background-color: #fff; display: flex; align-items: center; padding-left: 6%; padding-right: 3%;}
 .hazelnutBox2{border-top: 2px solid rgb(214, 214, 214); border-bottom: 2px solid rgb(214, 214, 214);}
@@ -137,7 +155,9 @@ from{opacity: 1;}}
 .hazelnutBox_right h3{margin-bottom: 10px;}
 .hazelnutBox_right p{font-size: 14px;}
 .hazelnutBox_right span{color: tomato;}
+/*카트 버튼*/
 .cart{width: 100px; height: 30px; background-color: tomato; color: #fff; text-align: center; padding-top: 4.5px; font-size: 13px; border-radius: 5px; float: right; cursor: pointer; margin-top: 10px;}
+/*카트 버튼 호버*/
 .cart:hover{animation-name: cart; animation-duration: 0.3s;}
 @keyframes cart{to{transform: scale(0.9);}
 from{transform: scale(1.0);}}

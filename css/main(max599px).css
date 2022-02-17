@@ -1,13 +1,13 @@
 @charset "utf-8";
 
-@media(min-width: 931px) and (max-width: 1216px){
+@media(max-width: 599px){
   .contentBox{width: 100%; height: 100%; margin: 0 auto;}
 
 /*로고 검색 박스*/
 #search{width: 100%; height: 100px; margin-top: 80px;}
-#search>.contentBox{padding-left: 3%;}
-.logoBox{width: 10%; height: 100%; float: left;}
-.searchBox{width: 90%; height: 100%; float: right; display: flex; align-items: center; padding-left: 5%;}
+#search>.contentBox{padding-left: 25%;}
+.logoBox{width: 20%; height: 100%; float: left; margin-right: 10%;}
+.searchBox{width: 70%; height: 100%; display: flex; align-items: center;}
 /*검색박스*/
 .searchIconBox{width: 40%; height: 50px; position: relative;}
 /*검색 아이콘*/
@@ -114,14 +114,14 @@ input:focus{outline: none;}
 #decaffeinBox{width: 100%; height: 500px; margin-top: 80px; overflow: hidden; transition: all 0.5s linear; transform: translateY(200px); opacity: 0;}
 #decaffeinBox>.contentBox{background-color: #fff;}
 /*샤이니 에티오피아 왼쪽*/
-.decaffeinBox_left{width: 48%; height: 100%; float: left; position: relative; cursor: pointer; background-image: url('../img/decaffein.jpg'); background-position: center; background-size: cover;}
+.decaffeinBox_left{width: 42.5%; height: 100%; float: left; position: relative; cursor: pointer; background-image: url('../img/decaffein.jpg'); background-position: center; background-size: cover;}
 /*샤이니 에티오피아 왼쪽 hover*/
 .decaffeinBox_black{width: 100%; height: 100%; position: absolute; top:0; left:0; background-color: black; opacity: 0.6; display: none; animation: ethiopia all 0.5s linear;}
 .decaffein{position: absolute; top: 45%; left: 13%; font-size: 30px; color: #fff;}
 .arrow{position: absolute; top: 55%; right: 50%;}
 
 /*샤이니 에티오피아 오른쪽*/
-.decaffeinBox_right{width: 52%; height: 100%; float: right; position: relative;}
+.decaffeinBox_right{width: 57.5%; height: 100%; float: right; position: relative;}
 /*오른쪽 위*/
 .decaffeinBox_top{width: 100%; height: 50%;}
 .decaffeinA{position: absolute;}
@@ -156,8 +156,8 @@ from{transform: scale(1.0);}}
 
 
 /*쟈뎅 브랜드 모음*/
-#brandBox{width: 100%; height: 800px; margin-top: 80px; padding-top: 50px; background-color: #fff; transition: all 0.5s linear; transform: translateY(200px); opacity: 0;}
-.brandBox_top{width: 100%; height: 150px; text-align: center; margin-bottom: 50px;}
+#brandBox{width: 100%; height: 950px; margin-top: 80px; padding-top: 50px; background-color: #fff; transition: all 0.5s linear; transform: translateY(200px); opacity: 0;}
+.brandBox_top{width: 100%; height: 150px; text-align: center; margin-bottom: 40px;}
 .brandBox_top h1{font-size: 40px; font-family: 'Oleo Script', cursive;}
 .brandBox_top span{font-size: 20px;  font-family: 'Jeju Myeongjo', serif;}
 .brandBox_top p{margin-top: 3%;}

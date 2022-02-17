@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
 @font-face {
   font-family: 'IM_Hyemin-Bold';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
@@ -10,4 +14,5 @@
   font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+

@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/main(max1216px).css">
+  <link rel="stylesheet" href="css/main(max930px).css">
+  <link rel="stylesheet" href="css/main(max599px).css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/font.css">
 
@@ -18,6 +20,7 @@
   <script src="JS/mouseover.js"></script>
   <script src="JS/header.js"></script>
   <script src="JS/scroll.js"></script>
+  <script src="JS/menu.js"></script>
 
 </head>
 <body>
@@ -26,7 +29,7 @@
     <div class="contentBox">
       <nav>
         <ul class="menu">
-          <li><i class="fa-solid fa-bars"></i><a href="#">전체 메뉴</a></li>
+          <li><i class="fa-solid fa-bars" onclick="openNav()"></i><a href="#">전체 메뉴</a></li>
           <li><a href="#">신제품</a></li>
           <li><a href="#">캡슐커피</a></li>
           <li><a href="#">베스트</a></li>
@@ -44,7 +47,18 @@
     </div>
   </header>
 
-  
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul class="overlayMenu">
+      <li><a href="#">신제품</a></li>
+      <li><a href="#">캡슐커피</a></li>
+      <li><a href="#">베스트</a></li>
+      <li><a href="#">선물세트</a></li>
+      <li><a href="#">이벤트</a></li>
+    </div>
+  </div>
+
+
   <div id="search">
     <div class="contentBox">
       <div class="logoBox">
@@ -62,8 +76,9 @@
   <div id="middleBox">
     <div class="middleSlide">
       <ul class="slide">
-        <li><img src="img/slide_valentine.png" alt="valentine"></li>
-        <li><img src="img/slide_classic.jpg" alt="classic">
+        <li style="background-image: url(img/slide_valentine.png)"></li>
+        <li style="background-image: url(img/slide_classic.jpg)"></li>
+
       </ul>
       <div class="slideBox">
         <div class="contentBox">
@@ -109,7 +124,6 @@
       <div class="reveBox_bottom">
   
         <div class="revA Reve">
-          <img src="img/revA.JPG" alt="revA" width="400" height="400">
           <div class="revA_white reveCoffee">
             <h4>[레브] 캡슐커피 웜 브리즈 10P</h4>
             <p>6,3000원</p>
@@ -118,7 +132,6 @@
         </div>
   
         <div class="revB Reve">
-          <img src="img/revB.JPG" alt="revB" width="400" height="400">
           <div class="revB_white reveCoffee">
             <h4>[레브] 캡슐커피 웰 드레스드 10P</h4>
             <p>6,3000원</p>
@@ -127,7 +140,6 @@
         </div>
   
         <div class="revC Reve">
-          <img src="img/revC.JPG" alt="revC" width="400" height="400">
           <div class="revC_white reveCoffee">
             <h4>[레브] 캡슐커피<br>싱글 오리진 콜롬비아 10P</h4>
             <p>6,3000원</p>
@@ -136,7 +148,6 @@
         </div>
   
         <div class="revD Reve">
-          <img src="img/revD.JPG" alt="revD" width="400" height="400">
           <div class="revD_white reveCoffee">
             <h4>[레브] 캡슐커피 디카페인 10P</h4>
             <p>6,3000원</p>
@@ -145,7 +156,6 @@
         </div>
   
         <div class="revF Reve">
-          <img src="img/revF.JPG" alt="revF" width="400" height="400">
           <div class="revF_white reveCoffee">
             <h4>[레브] 캡슐커피 모닝 선샤인 10P</h4>
             <p>6,3000원</p>
@@ -154,7 +164,6 @@
         </div>
   
         <div class="revG Reve">
-          <img src="img/revG.JPG" alt="revG" width="400" height="400">
           <div class="revG_white reveCoffee">
             <h4>[레브] 캡슐커피<br>스모키 미드나잇 10P</h4>
             <p>6,3000원</p>
@@ -189,7 +198,7 @@
         <h1>our tea</h1>
         <div class="line"></div>
         <p>
-          과일의 싱그러움과 찻잎의 진항 풍미를<br>
+          과일의 싱그러움과 찻잎의 진한 풍미를
           한잔에 담은 티 브랜드
         </p>
       </div>
@@ -204,7 +213,7 @@
   <div id="decaffeinBox">
     <div class="contentBox">
       <div class="decaffeinBox_left">
-        <img src="img/decaffein.jpg" alt="decaffein" width="720">
+        <!-- <img src="img/decaffein.jpg" alt="decaffein" width="720"> -->
         <div class="decaffeinBox_black">
           <span class="decaffein">쟈뎅 핸드 드립 커피 더 보기</span><img src="img/icon_arrow.png" class="arrow" alt="arrow">
         </div>
@@ -239,7 +248,7 @@
   <div id="nutBox">
     <div class="contentBox">
       <div class="nutBox_left">
-        <img src="img/hazelnut.jpg" alt="hazelnut">
+        <!-- <img src="img/hazelnut.jpg" alt="hazelnut"> -->
         <span>우리가 좋아하는<br>헤이즐넛!</span>
         <p>더보기+</p>
         <div class="blackBox"></div>

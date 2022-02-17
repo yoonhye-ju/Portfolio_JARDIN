@@ -15,6 +15,7 @@
   
   .menu{width: 75%; height: 100%; display: flex; float: left;}
   .menu li{width: 100%; height: 100%; padding-top: 10px; cursor: pointer;}
+  .menu li:first-child{padding-right: 5%;}
   .menu li i{font-size: 20px; padding-right: 15%;}
   .menu li a{font-weight: bold;}
   .menu li a:hover{color:#eb6100;}
@@ -25,6 +26,9 @@
   .login li{font-size: 13px; padding-right: 3%;}
   .login li a.txtCh{color: #fff;}
 
+  /*태블릿 메뉴*/
+  #myNav{display: none;}
+
   /*풋터*/
 footer{width: 100%; height: 150px; margin-top: 30px; border-top: 1px solid rgb(172, 172, 172);}
 .footer_left{width: 20%; height: 100%; float: left;}
@@ -34,8 +38,8 @@ footer{width: 100%; height: 150px; margin-top: 30px; border-top: 1px solid rgb(1
 .footer_right p{margin-top: 1%;}
 }
 
-/*1216 이하*/
-@media(max-width: 1216px){
+/*931px-1216px*/
+@media(min-width: 931px) and (max-width: 1216px){
   *{margin: 0; padding: 0; box-sizing: border-box;}
   html {scroll-behavior: smooth;}
   body{font-family: 'Noto Sans KR', sans-serif; background-color: rgb(245, 241, 241);}
@@ -47,23 +51,113 @@ footer{width: 100%; height: 150px; margin-top: 30px; border-top: 1px solid rgb(1
   header>.contentBox{padding-left: 3%;}
   header.fixed{background: #eb6100; position: fixed; top: 0px; width: 100%;}
   
-  .menu{width: 75%; height: 100%; display: flex; float: left;}
+  .menu{width: 70%; height: 100%; display: flex; float: left;}
   .menu li{width: 100%; height: 100%; padding-top: 10px; cursor: pointer;}
-  .menu li i{font-size: 20px; padding-right: 15%;}
+  .menu li i{font-size: 20px; padding-right: 10%;}
+  .menu li:first-child{padding-right: 5%;}
+  .menu li i{padding-right: 10%;}
   .menu li a{font-weight: bold;}
   .menu li a:hover{color:#eb6100;}
   .menu li a.txtCh{color: #fff;}
   .menu li a.txtCh:hover{color: black;}
   
-  .login{width: 25%; height: 100%; display: flex; float: right; justify-content: space-around; padding-top: 15px; padding-right: 2%;}
+  .login{width: 30%; height: 100%; display: flex; float: right; justify-content: space-around; padding-top: 15px; padding-right: 2%;}
   .login li{font-size: 13px; padding-right: 3%;}
   .login li a.txtCh{color: #fff;}
+
+    /*태블릿 메뉴*/
+    #myNav{display: none;}
 
   /*풋터*/
 footer{width: 100%; height: 150px; margin-top: 30px; border-top: 1px solid rgb(172, 172, 172);}
 .footer_left{width: 20%; height: 100%; float: left;}
 .footer_left img{margin: 10% 20% 0% 20%;}
 .footer_right{width: 80%; height: 100%; float: right; font-size: 13px; padding: 2%;}
+.footer_right span{color: #666;}
+.footer_right p{margin-top: 1%;}
+}
+
+/*600px-930px*/
+@media(min-width: 600px) and (max-width: 930px){
+  *{margin: 0; padding: 0; box-sizing: border-box;}
+  html {scroll-behavior: smooth;}
+  body{font-family: 'Noto Sans KR', sans-serif; background-color: rgb(245, 241, 241);}
+  li, ul, ol{list-style: none;}
+  a{text-decoration: none; color: black;}
+
+  /*헤더*/
+  header{width: 100%; height: 50px; transition: 0.5s ease-in-out; z-index: 10;}
+  header>.contentBox{padding-left: 3%;}
+  header.fixed{background: #eb6100; position: fixed; top: 0px; width: 100%;}
+  
+  .menu{width: 50%; height: 100%; display: flex; float: left;}
+  .menu li{width: 100%; height: 100%; padding-top: 10px; cursor: pointer;}
+  .menu li i{font-size: 40px; padding-right: 10%; line-height: 30px;}
+  .menu li:first-child{padding-right: 5%;}
+  .menu li a{font-weight: bold; display: none;}
+  .menu li a:hover{color:#eb6100;}
+  .menu li a.txtCh{color: #fff;}
+  .menu li a.txtCh:hover{color: black;}
+  
+  .login{width: 50%; height: 100%; display: flex; float: right; justify-content: space-around; padding-top: 15px; padding-right: 2%;}
+  .login li{font-size: 13px; padding-right: 3%;}
+  .login li a.txtCh{color: #fff;}
+
+  /*태블릿 메뉴*/
+  .overlay{height: 100%; width: 0; position: fixed; z-index:100; top: 0; left: 0; background-color: #eb6100; overflow-x: hidden; transition: 0.5s;}
+  .overlayMenu{position: relative; top: 25%; width: 100%; text-align: center; display: block; margin-top: 30px;}
+  .overlay a{padding:20px; line-height:160%; text-decoration: none; font-size: 30px; color: white; transition: 0.3s; font-weight: bold; display: block;}
+  .overlay a:hover{color: black;}
+  .overlay .closebtn{position: absolute; top: 20px; right: 45px; font-size: 60px;}
+
+  /*풋터*/
+footer{width: 100%; height: 170px; margin-top: 30px; border-top: 1px solid rgb(172, 172, 172);}
+.footer_left{width: 20%; height: 100%; float: left;}
+.footer_left img{margin: 10% 20% 0% 20%;}
+.footer_right{width: 70%; height: 100%; float: right; font-size: 13px; padding: 2%;}
+.footer_right span{color: #666;}
+.footer_right p{margin-top: 1%;}
+}
+
+
+/*600px*/
+@media(max-width: 599px){
+  *{margin: 0; padding: 0; box-sizing: border-box;}
+  html {scroll-behavior: smooth;}
+  body{font-family: 'Noto Sans KR', sans-serif; background-color: rgb(245, 241, 241);}
+  li, ul, ol{list-style: none;}
+  a{text-decoration: none; color: black;}
+
+  /*헤더*/
+  header{width: 100%; height: 50px; transition: 0.5s ease-in-out; z-index: 10;}
+  header>.contentBox{padding-left: 3%;}
+  header.fixed{background: #eb6100; position: fixed; top: 0px; width: 100%;}
+  
+  .menu{width: 50%; height: 100%; display: flex; float: left;}
+  .menu li{width: 100%; height: 100%; padding-top: 10px; cursor: pointer;}
+  .menu li i{font-size: 40px; padding-right: 10%; line-height: 30px;}
+  .menu li:first-child{padding-right: 5%;}
+  .menu li a{font-weight: bold; display: none;}
+  .menu li a:hover{color:#eb6100;}
+  .menu li a.txtCh{color: #fff;}
+  .menu li a.txtCh:hover{color: black;}
+  
+  .login{width: 50%; height: 100%; display: flex; float: right; justify-content: space-around; padding-top: 15px; padding-right: 2%;}
+  .login li{font-size: 13px; padding-right: 3%;}
+  .login li a.txtCh{color: #fff;}
+
+  /*태블릿 메뉴*/
+  .overlay{height: 100%; width: 0; position: fixed; z-index:100; top: 0; left: 0; background-color: #eb6100; overflow-x: hidden; transition: 0.5s;}
+  .overlayMenu{position: relative; top: 25%; width: 100%; text-align: center; display: block; margin-top: 30px;}
+  .overlay a{padding:20px; line-height:160%; text-decoration: none; font-size: 30px; color: white; transition: 0.3s; font-weight: bold; display: block;}
+  .overlay a:hover{color: black;}
+  .overlay .closebtn{position: absolute; top: 20px; right: 45px; font-size: 60px;}
+
+  /*풋터*/
+footer{width: 100%; height: 300px; margin-top: 30px; border-top: 1px solid rgb(172, 172, 172);}
+.footer_left{width: 40%; height: 100%; float: left;}
+.footer_left img{margin: 10% 20% 0% 20%;}
+.footer_right{width: 60%; height: 100%; float: right; font-size: 13px; padding: 2%;}
 .footer_right span{color: #666;}
 .footer_right p{margin-top: 1%;}
 }

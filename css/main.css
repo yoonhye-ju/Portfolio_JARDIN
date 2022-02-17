@@ -48,22 +48,42 @@ input:focus{outline: none;}
 .coffee_glass{position: absolute; top: 20%; right: 70%; transition: all 0.5s linear; transform: translateY(200px); opacity: 0;}
 .focusBox{width: 100%; height: 500px; background-color: gold; position: absolute; bottom: 0; transition: all 0.3s linear; transform: translateY(100px); opacity: 0;}
 
-/*레브*/
+/*Reve*/
 #collectionBox{width: 100%; height: 1030px; margin-top: 80px; overflow: hidden;}
 .collectionBox_top{width: 100%; height: 150px; margin-bottom: 50px;}
 .reveBox{width: 30%; height: 150px; text-align: center; margin-left: 35%;}
-.reveBox h1{font-size: 40px; font-family: 'Courgette', cursive;}
-.reveBox span{font-size: 20px;}
+.reveBox h1{font-size: 50px; font-family: 'Oleo Script', cursive;}
+.reveBox span{font-size: 20px; font-family: 'Jeju Myeongjo', serif;}
 .reveBox p{margin-top: 5%;}
 .reveBox_bottom{width: 100%; height: 800px; display: flex; flex-flow: row wrap; align-content: center;}
 
-/*Reve*/
+/*Reve 통합 이미지 사이즈*/
 .Reve{width: 33.31%; height: 50%; position: relative;}
+/*revA 이미지 링크*/
+.revA{background-image: url(../img/revA.JPG); background-position: center; background-size: cover;}
+/*revB 이미지 링크*/
+.revB{background-image: url(../img/revB.JPG); background-position: center; background-size: cover;}
+/*revC 이미지 링크*/
+.revC{background-image: url(../img/revC.JPG); background-position: center; background-size: cover;}
+/*revD 이미지 링크*/
+.revD{background-image: url(../img/revD.JPG); background-position: center; background-size: cover;}
+/*revF 이미지 링크*/
+.revF{background-image: url(../img/revF.JPG); background-position: center; background-size: cover;}
+/*revG 이미지 링크*/
+.revG{background-image: url(../img/revG.JPG); background-position: center; background-size: cover;}
+
 
 /*Reve hover*/
 .reveCoffee h4{position: absolute; top: 40%; left: 20%; font-size: 20px; color: black;}
 .reveCoffee p{position: absolute; top: 48%; left: 41%; font-weight: bold; font-size: 18px; color: tomato;}
 .reveCoffee button{position: absolute; width: 30%; height: 10%; top: 65%; left: 35%; border: none; border-radius: 30px; color: #fff; background-color: tomato; cursor: pointer;}
+
+/*Reve hover h4 배치*/
+.revB_white h4{position: absolute; top: 40%; left: 17%; font-size: 20px; color: black;}
+.revF_white h4{position: absolute; top: 40%; left: 17%; font-size: 20px; color: black;}
+.revC_white h4{position: absolute; top: 32%; left: 21%; font-size: 20px; color: black;}
+.revG_white h4{position: absolute; top: 32%; left: 27%; font-size: 20px; color: black;}
+
 /*Reve fadeIn*/
 .revA_white{width: 100%; height: 100%; position: absolute; top:0; left:0; background-color: #fff; text-align: center; display: none;}
 .revB_white{width: 100%; height: 100%; position: absolute; top:0; left:0; background-color: #fff; text-align: center; display: none;}
@@ -72,12 +92,6 @@ input:focus{outline: none;}
 .revF_white{width: 100%; height: 100%; position: absolute; top:0; left:0; background-color: #fff; text-align: center; display: none;}
 .revG_white{width: 100%; height: 100%; position: absolute; top:0; left:0; background-color: #fff; text-align: center; display: none;}
 
-
-/*Reve hover h4 배치*/
-.revB_white h4{position: absolute; top: 40%; left: 17%; font-size: 20px; color: black;}
-.revF_white h4{position: absolute; top: 40%; left: 17%; font-size: 20px; color: black;}
-.revC_white h4{position: absolute; top: 32%; left: 21%; font-size: 20px; color: black;}
-.revG_white h4{position: absolute; top: 32%; left: 27%; font-size: 20px; color: black;}
 
 /*아워밀크*/
 #ourmilk_Box{width: 100%; height: 490px; overflow: hidden; margin-top: 50px; transition: all 0.5s linear; transform: translateY(200px); opacity: 0;}
@@ -92,7 +106,7 @@ input:focus{outline: none;}
 /*아워티*/
 #lineBox{width: 100%; height: 300px; margin-top: 50px; transition: all 0.5s linear; transform: translateY(200px); opacity: 0; overflow: hidden;}
 #lineBox>.contentBox{background-color: #fff;}
-.lineBox_left{width: 30%; height: 100%;float: left; padding: 9% 0 0 5%;}
+.lineBox_left{width: 30%; height: 100%;float: left; padding: 9% 10% 0 5%;}
 .lineBox_left p{font-size: 15px; line-height: 28px;}
 .lineBox_right{width: 70%; height: 100%; float: right; padding-right: 6%;}
 .line{width: 20%; height: 4px; background-color: sienna; margin: 5% 0%;}
@@ -102,7 +116,7 @@ input:focus{outline: none;}
 #decaffeinBox{width: 100%; height: 500px; margin-top: 80px; overflow: hidden; transition: all 0.5s linear; transform: translateY(200px); opacity: 0;}
 #decaffeinBox>.contentBox{background-color: #fff;}
 /*샤이니 에티오피아 왼쪽*/
-.decaffeinBox_left{width: 60%; height: 100%; float: left; position: relative; cursor: pointer; }
+.decaffeinBox_left{width: 60%; height: 100%; float: left; position: relative; cursor: pointer; background-image: url('../img/decaffein.jpg'); background-position: center; background-size: cover;}
 /*샤이니 에티오피아 왼쪽 hover*/
 .decaffeinBox_black{width: 100%; height: 100%; position: absolute; top:0; left:0; background-color: black; opacity: 0.6; display: none; animation: ethiopia all 0.5s linear;}
 .decaffein{position: absolute; top: 45%; left: 23%; font-size: 30px; color: #fff;}
@@ -124,10 +138,10 @@ input:focus{outline: none;}
 /*헤이즐넛*/
 #nutBox{width: 100%; height: 500px; margin-top: 80px; overflow: hidden;}
 /*헤이즐넛 왼쪽*/
-.nutBox_left{width: 40%; height: 100%; background-color: blueviolet; float: left; position: relative;}
+.nutBox_left{width: 40%; height: 100%; float: left; position: relative; background-image: url(../img/hazelnut.jpg); background-position: center; background-size: cover;}
 .nutBox_left span{position: absolute; top: 320px; left: 25px; color: #fff; font-size: 35px; font-family: 'IM_Hyemin-Bold'; line-height: 47px; z-index: 3;}
 .nutBox_left p{position: absolute; top: 430px; left: 25px; color: #fff; font-family: 'IM_Hyemin-Bold'; font-size: 13px; width: 80px; height: 30px; border: 2px solid #fff; border-radius: 3px; text-align: center; padding-top: 6px; cursor: pointer; z-index: 3;}
-.blackBox{position:absolute; width: 104%; height: 200px; opacity: 0.5; background-color: black; top: 300px;}
+.blackBox{position:absolute; width: 100%; height: 200px; opacity: 0.5; background-color: black; top: 300px;}
 /*헤이즐넛 오른쪽*/
 .nutBox_right{width: 60%; height: 100%; background-color: coral; float: right;}
 .hazelnutBox{width: 100%; height: 33.3%; background-color: #fff; display: flex; align-items: center; padding-left: 6%; padding-right: 3%;}
@@ -146,10 +160,10 @@ from{transform: scale(1.0);}}
 
 /*쟈뎅 브랜드 모음*/
 #brandBox{width: 100%; height: 700px; margin-top: 80px; padding-top: 50px; background-color: #fff; transition: all 0.5s linear; transform: translateY(200px); opacity: 0;}
-.brandBox_top{width: 30%; height: 150px; text-align: center; margin-left: 35%;}
-.brandBox_top h1{font-size: 40px; font-family: 'Courgette', cursive;}
-.brandBox_top span{font-size: 20px;}
-.brandBox_top p{margin-top: 5%;}
+.brandBox_top{width: 100%; height: 150px; text-align: center; margin-bottom: 50px;}
+.brandBox_top h1{font-size: 40px; font-family: 'Oleo Script', cursive;}
+.brandBox_top span{font-size: 20px;  font-family: 'Jeju Myeongjo', serif;}
+.brandBox_top p{margin-top: 3%;}
 .brand{width: 100%; height: 350px; display: flex; flex-flow: row wrap; justify-content: space-around;} 
 .brand img{margin: 2%;}
 

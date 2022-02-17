@@ -2,13 +2,13 @@ $(window).scroll(function () {
   let wb = $(this).scrollTop();
 
   /*focus 커피 배경*/
-  if (wb > 400) {
+  if (wb > 300) {
     $('.focusBox').css("transform", "translateY(0px)").css("opacity", "1");
   } else {
     $('.focusBox').css("transform", "translateY(0px)").css("opacity", "0");
   }
   /*focus 커피 슬로건*/
-  if (wb > 500) {
+  if (wb > 400) {
     $('.slogan').css("transform", "translateY(0px)").css("opacity", "1");
     /*focus 커피*/
     $('.coffee').css("transform", "translateY(0px)").css("opacity", "1");

@@ -33,7 +33,7 @@
 footer{width: 100%; height: 150px; margin-top: 30px; border-top: 1px solid rgb(172, 172, 172);}
 .footer_left{width: 20%; height: 100%; float: left;}
 .footer_left img{margin: 10% 20% 0% 20%;}
-.footer_right{width: 80%; height: 100%; float: right; font-size: 13px; padding: 2%;}
+.footer_right{width: 80%; height: 100%; float: right; font-size: 13px; padding: 2%; text-align: justify;}
 .footer_right span{color: #666;}
 .footer_right p{margin-top: 1%;}
 }
@@ -72,7 +72,7 @@ footer{width: 100%; height: 150px; margin-top: 30px; border-top: 1px solid rgb(1
 footer{width: 100%; height: 150px; margin-top: 30px; border-top: 1px solid rgb(172, 172, 172);}
 .footer_left{width: 20%; height: 100%; float: left;}
 .footer_left img{margin: 10% 20% 0% 20%;}
-.footer_right{width: 80%; height: 100%; float: right; font-size: 13px; padding: 2%;}
+.footer_right{width: 80%; height: 100%; float: right; font-size: 13px; padding: 2%; text-align: justify;}
 .footer_right span{color: #666;}
 .footer_right p{margin-top: 1%;}
 }
@@ -114,7 +114,7 @@ footer{width: 100%; height: 150px; margin-top: 30px; border-top: 1px solid rgb(1
 footer{width: 100%; height: 170px; margin-top: 30px; border-top: 1px solid rgb(172, 172, 172);}
 .footer_left{width: 20%; height: 100%; float: left;}
 .footer_left img{margin: 10% 20% 0% 20%;}
-.footer_right{width: 70%; height: 100%; float: right; font-size: 13px; padding: 2%;}
+.footer_right{width: 70%; height: 100%; float: right; font-size: 13px; padding: 2%; text-align: justify;}
 .footer_right span{color: #666;}
 .footer_right p{margin-top: 1%;}
 }
@@ -146,7 +146,7 @@ footer{width: 100%; height: 170px; margin-top: 30px; border-top: 1px solid rgb(1
   .login li{font-size: 13px; padding-right: 3%;}
   .login li a.txtCh{color: #fff;}
 
-  /*태블릿 메뉴*/
+  /*모바일 메뉴*/
   .overlay{height: 100%; width: 0; position: fixed; z-index:100; top: 0; left: 0; background-color: #eb6100; overflow-x: hidden; transition: 0.5s;}
   .overlayMenu{position: relative; top: 25%; width: 100%; text-align: center; display: block; margin-top: 30px;}
   .overlay a{padding:20px; line-height:160%; text-decoration: none; font-size: 30px; color: white; transition: 0.3s; font-weight: bold; display: block;}
@@ -154,10 +154,10 @@ footer{width: 100%; height: 170px; margin-top: 30px; border-top: 1px solid rgb(1
   .overlay .closebtn{position: absolute; top: 20px; right: 45px; font-size: 60px;}
 
   /*풋터*/
-footer{width: 100%; height: 300px; margin-top: 30px; border-top: 1px solid rgb(172, 172, 172);}
-.footer_left{width: 40%; height: 100%; float: left;}
-.footer_left img{margin: 10% 20% 0% 20%;}
-.footer_right{width: 60%; height: 100%; float: right; font-size: 13px; padding: 2%;}
+footer{width: 100%; height: 170px; margin-top: 30px; border-top: 1px solid rgb(172, 172, 172);}
+.footer_left{width: 35%; height: 100%; float: left;}
+.footer_left img{margin: 10% 10% 0% 10%;}
+.footer_right{width: 65%; height: 100%; float: right; font-size: 13px; padding: 3% 3% 3% 0%; text-align: justify;}
 .footer_right span{color: #666;}
 .footer_right p{margin-top: 1%;}
 }

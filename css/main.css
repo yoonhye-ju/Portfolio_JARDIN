@@ -101,7 +101,8 @@ input:focus{outline: none;}
 /*아워밀크 왼쪽 설명*/
 .milkText{margin-top: 100px;}
 /*아워밀크 오른쪽*/
-.milkbox_right{width: 70%; height: 100%; float: right;}
+.milkbox_right{width: 70%; height: 100%; background-image: url(../img/ourtmilk.JPG); background-position: center; background-size: cover; float: right;}
+
 
 /*아워티*/
 #lineBox{width: 100%; height: 300px; margin-top: 50px; transition: all 0.5s linear; transform: translateY(200px); opacity: 0; overflow: hidden;}

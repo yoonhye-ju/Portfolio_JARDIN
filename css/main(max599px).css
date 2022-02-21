@@ -106,12 +106,8 @@ input:focus{outline: none;}
 #lineBox>.contentBox{background-color: #fff;}
 .lineBox_left{width: 100%; height: 200px; float: left; padding: 6% 10% 0% 5%;}
 .lineBox_left p{font-size: 15px; line-height: 28px;}
-.lineBox_right{width: 100%; height: 200px; padding: 3% 0% 6% 6%;}
 .line{width: 20%; height: 4px; background-color: sienna; margin: 5% 0%;}
-.lineBox_right{display: flex; justify-content: space-around; align-items: center;
-background-image: url(../img/ourteaA.JPG); background-image: url(../img/ourteaB.JPG);
-background-image: url(../img/ourteaC.JPG);
-}
+.lineBox_right{width: 100%; height: 200px; padding: 3% 6% 6% 6%; display: flex; justify-content: space-around; background-repeat: no-repeat; background-position: center; background-size:  contain;}
 
 /*샤이니 에티오피아*/
 #decaffeinBox{width: 100%; height: 1000px; margin-top: 80px; overflow: hidden; transition: all 0.5s linear; transform: translateY(200px); opacity: 0;}

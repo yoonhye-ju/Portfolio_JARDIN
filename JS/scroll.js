@@ -46,7 +46,7 @@ $(window).scroll(function () {
 //   $('.coffee_glass').css("transform", "translateX(0px)").css("opacity", "1");
 // }
 
-if (window.matchMedia("(max-width: 601px)").matches) {
+if (window.matchMedia("(max-width: 599px)").matches) {
 
 
   $(window).scroll(function () {

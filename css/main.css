@@ -129,11 +129,11 @@ input:focus{outline: none;}
 /*오른쪽 위*/
 .decaffeinBox_top{width: 100%; height: 50%;}
 .decaffeinA{position: absolute;}
-.decaffeinA_Text{position: absolute; margin: 18% 0 0 55%;}
+.decaffeinA_Text{position: absolute; margin: 85px 0 0 55%;}
 /*오른쪽 아래*/
 .decaffeinBox_down{width: 100%; height: 50%;}
 .decaffeinB{position: absolute; margin-left: 50%;}
-.decaffeinB_Text{position: absolute; margin: 18% 0 0 5%;}
+.decaffeinB_Text{position: absolute; margin: 80px 0 0 5%;}
 
 
 /*헤이즐넛*/

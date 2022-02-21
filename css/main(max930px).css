@@ -92,21 +92,20 @@ input:focus{outline: none;}
 
 
 /*아워밀크*/
-#ourmilk_Box{width: 100%; height: 570px; overflow: hidden; margin-top: 50px; transition: all 0.5s linear; transform: translateY(200px); opacity: 0;}
+#ourmilk_Box{width: 100%; height: 750px; overflow: hidden; margin-top: 50px; transition: all 0.5s linear; transform: translateY(200px); opacity: 0;}
 #ourmilk_Box>.contentBox{background-color: #fff;}
 /*아워밀크 왼쪽*/
-.milkbox_left{width: 100%; height: 150px; padding: 7% 6% 0 5%;}
+.milkbox_left{width: 100%; height: 250px; padding: 7% 6% 0 5%;}
 /*아워밀크 오른쪽*/
 .milkbox_right{width: 100%; height: 500px; background-image: url(../img/ourtmilk.JPG); background-position: center; background-size: contain; background-repeat: no-repeat;}
 
 /*아워티*/
-#lineBox{width: 100%; height: 400px; margin-top: 50px; transition: all 0.5s linear; transform: translateY(200px); opacity: 0; overflow: hidden;}
+#lineBox{width: 100%; height: 450px; margin-top: 50px; transition: all 0.5s linear; transform: translateY(200px); opacity: 0; overflow: hidden;}
 #lineBox>.contentBox{background-color: #fff;}
-.lineBox_left{width: 100%; height: 200px; float: left; padding: 6% 10% 0% 5%;}
+.lineBox_left{width: 100%; height: 250px; float: left; padding: 6% 10% 0% 5%;}
 .lineBox_left p{font-size: 15px; line-height: 28px;}
-.lineBox_right{width: 100%; height: 200px; padding: 3% 0% 6% 6%;}
 .line{width: 20%; height: 4px; background-color: sienna; margin: 5% 0%;}
-.lineBox_right{display: flex; justify-content: space-around; align-items: center;}
+.lineBox_right{width: 100%; height: 200px; padding: 3% 0% 6% 6%; display: flex; justify-content: space-around; align-items: center;}
 
 /*샤이니 에티오피아*/
 #decaffeinBox{width: 100%; height: 1000px; margin-top: 80px; overflow: hidden; transition: all 0.5s linear; transform: translateY(200px); opacity: 0;}
@@ -123,11 +122,11 @@ input:focus{outline: none;}
 /*오른쪽 위*/
 .decaffeinBox_top{width: 100%; height: 50%;}
 .decaffeinA{position: absolute;}
-.decaffeinA_Text{position: absolute; margin: 18% 0 0 55%;}
+.decaffeinA_Text{position: absolute; margin: 85px 0 0 55%;}
 /*오른쪽 아래*/
 .decaffeinBox_down{width: 100%; height: 50%;}
 .decaffeinB{position: absolute; margin-left: 50%;}
-.decaffeinB_Text{position: absolute; margin: 18% 0 0 5%;}
+.decaffeinB_Text{position: absolute; margin: 80px 0 0 5%;}
 
 
 /*헤이즐넛*/
@@ -163,7 +162,7 @@ from{transform: scale(1.0);}}
 .brand img{margin: 2%;}
 
 /*회사 정보*/
-#informBox{width: 100%; height: 450px; border-top: 1px solid rgb(172, 172, 172);}
+#informBox{width: 100%; height: 500px; border-top: 1px solid rgb(172, 172, 172);}
 #informBox>.contentBox{display: flex; flex-direction: column;}
 .box{margin: 2% 3%;}
 .box1 h2{margin-bottom: 5%;}

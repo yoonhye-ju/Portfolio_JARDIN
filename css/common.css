@@ -30,7 +30,7 @@
   #myNav{display: none;}
 
   /*풋터*/
-footer{width: 100%; height: 150px; margin-top: 30px; border-top: 1px solid rgb(172, 172, 172);}
+footer{width: 100%; height: 150px; border-top: 1px solid rgb(172, 172, 172);}
 .footer_left{width: 20%; height: 100%; float: left;}
 .footer_left img{margin: 10% 20% 0% 20%;}
 .footer_right{width: 80%; height: 100%; float: right; font-size: 13px; padding: 2%; text-align: justify;}
@@ -69,7 +69,7 @@ footer{width: 100%; height: 150px; margin-top: 30px; border-top: 1px solid rgb(1
     #myNav{display: none;}
 
   /*풋터*/
-footer{width: 100%; height: 150px; margin-top: 30px; border-top: 1px solid rgb(172, 172, 172);}
+footer{width: 100%; height: 150px; border-top: 1px solid rgb(172, 172, 172);}
 .footer_left{width: 20%; height: 100%; float: left;}
 .footer_left img{margin: 10% 20% 0% 20%;}
 .footer_right{width: 80%; height: 100%; float: right; font-size: 13px; padding: 2%; text-align: justify;}
@@ -111,7 +111,7 @@ footer{width: 100%; height: 150px; margin-top: 30px; border-top: 1px solid rgb(1
   .overlay .closebtn{position: absolute; top: 20px; right: 45px; font-size: 60px;}
 
   /*풋터*/
-footer{width: 100%; height: 170px; margin-top: 30px; border-top: 1px solid rgb(172, 172, 172);}
+footer{width: 100%; height: 170px; border-top: 1px solid rgb(172, 172, 172);}
 .footer_left{width: 20%; height: 100%; float: left;}
 .footer_left img{margin: 10% 20% 0% 20%;}
 .footer_right{width: 70%; height: 100%; float: right; font-size: 13px; padding: 2%; text-align: justify;}
@@ -154,10 +154,10 @@ footer{width: 100%; height: 170px; margin-top: 30px; border-top: 1px solid rgb(1
   .overlay .closebtn{position: absolute; top: 20px; right: 45px; font-size: 60px;}
 
   /*풋터*/
-footer{width: 100%; height: 170px; margin-top: 30px; border-top: 1px solid rgb(172, 172, 172);}
+footer{width: 100%; height: 200px; border-top: 1px solid rgb(172, 172, 172);}
 .footer_left{width: 35%; height: 100%; float: left;}
 .footer_left img{margin: 10% 10% 0% 10%;}
-.footer_right{width: 65%; height: 100%; float: right; font-size: 13px; padding: 3% 3% 3% 0%; text-align: justify;}
+.footer_right{width: 65%; height: 100%; float: right; font-size: 13px; padding: 25px 3% 3% 0%; text-align: justify;}
 .footer_right span{color: #666;}
 .footer_right p{margin-top: 1%;}
 }

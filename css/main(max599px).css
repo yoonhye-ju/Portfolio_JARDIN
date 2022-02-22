@@ -164,9 +164,9 @@ from{transform: scale(1.0);}}
 /* .brand img{margin: 2%;} */
 
 /*회사 정보*/
-#informBox{width: 100%; height: 410px; border-top: 1px solid rgb(172, 172, 172);}
+#informBox{width: 100%; height: 430px; border-top: 1px solid rgb(172, 172, 172);}
 #informBox>.contentBox{display: flex; flex-direction: column;}
-.box{margin: 2% 3%;}
+.box{margin: 10px 3%;}
 .box1 h2{margin-bottom: 5%;}
 .box p{font-size: 13px; color: #666; margin-top: 1%;}
 .box2{border-bottom: 1px solid rgb(172, 172, 172); border-top: 1px solid rgb(172, 172, 172); padding: 3% 0%;}

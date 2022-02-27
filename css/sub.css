@@ -1,2 +1,50 @@
 @charset "utf-8";
 
+.contentBox{width: 1200px; height: 100%; margin: 0 auto; background-color: antiquewhite;}
+
+/*로고 검색 박스*/
+#search{width: 100%; height: 100px; margin-top: 80px;}
+#search>.contentBox{padding-left: 3%;}
+.logoBox{width: 10%; height: 100%; float: left;}
+.searchBox{width: 90%; height: 100%; float: right; display: flex; align-items: center; padding-left: 5%;}
+/*검색박스*/
+.searchIconBox{width: 40%; height: 50px; position: relative;}
+/*검색 아이콘*/
+.searchBar{position: absolute; cursor: pointer; top: 5%; left: 88%; z-index: 3;}
+/*검색창*/
+#searchLine{width: 100%; height: 50px; border: none; border-bottom: 3px solid sienna; font-size: 20px; background-color: transparent; position: absolute;}
+input:focus{outline: none;}
+
+/*신상품 문구*/
+#newBox{width: 100%; height: 200px;}
+#newBox>.contentBox{display: flex; justify-content: space-around; flex-direction: column; align-items: center;}
+.newTag{width: 100%; height: 50px; display: flex; justify-content: space-around;}
+
+#productBox{width: 100%; height: 700px;}
+.newProduct{width: 40%; height: 100%; background-color: coral; float: left;}
+.productMin{width: 60%; height: 100%; float: right; display: flex; justify-content: space-around; flex-flow: row wrap;}
+.productMini{width: 35%; height: 45%; background-color: darkgreen;}
+
+#products{width: 100%; height: 800px; margin-top: 30px;}
+#products>.contentBox{display: flex; justify-content: space-around; flex-flow: row wrap;}
+.box{width: 20%; height: 40%; margin: 2%; background-color: darkgreen;}
+
+#bannerBox{width: 100%; height: 520px;}
+.banner{width: 83%; height: 100%; background-image: url(../img/banner.JPG); margin: 0 auto; background-repeat: no-repeat;}
+
+/*콤부차*/
+#kombuBox{width: 100%; height: 500px; background-color: blue;}
+/*콤부차 왼쪽*/
+.kombuLeft{width: 65%; height: 100%; background-color: cyan; float: left; display: flex; justify-content: space-around;}
+.komnuLeft_Box1{width: 13%; height: 100%; background-image: url(../img/kombu_berry.jpg);}
+.komnuLeft_Box2{background-color: darkgreen;}
+.komnuLeft_Box3{background-color: darkgreen;}
+/*콤부차 오른쪽*/
+.kombuRight{width: 35%; height: 100%; background-color: coral; float: right;}
+/*콤부차 설명*/
+.kombuRight_text{width: 100%; height: 80%; background-color: darkmagenta; padding: 10%; margin-top: 80px;}
+.kombuTaste{width: 56%; height: 28px; background-color: palevioletred; color: #fff; font-size: 14px; padding-left: 2%; padding-top: 1%; margin-bottom: 13px;}
+.kombuRight_text h2{font-size: 24px; margin-top: 5px;}
+.kombuRight_text h1{font-size: 33px;}
+.kombuStory{margin: 30px 0px 50px 0px;}
+.buy{width: 130px; height: 40px; border: none; border-radius: 5px; background-color: palevioletred; color: white; cursor: pointer;}
